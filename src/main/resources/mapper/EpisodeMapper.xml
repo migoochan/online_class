@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xdclass.xdclass.mapper.EpisodeMapper">
+    <select id="findFirstByVideoId" resultType="com.xdclass.xdclass.model.entity.Episode">
+        select * from episode where video_id = #{videoId} and num = 1
+    </select>
+</mapper>
